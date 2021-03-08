@@ -10,7 +10,7 @@ Using
 
 1. Add these lines to your application componenent.mk file::
 
-       COMPONENT_DEPENDS += google-cast
+       COMPONENT_DEPENDS += GoogleCast
        ENABLE_SSL := Bearssl
 
 2. Add these lines to your application::
@@ -43,7 +43,7 @@ Re-Generating C files from proto file
 You can re-generate the C files from the proto file. This can be useful if you want to use a newer version of the Google Cast proto file.
 Make sure to compile it using `nanopb`. The re-generation can be done with the commands below::
 
-    cd $SMING_HOME/Libraries/google-cast/samples/basic
+    cd $SMING_HOME/Libraries/GoogleCast/samples/basic
     make python-requirements # should be executed once to download and install the required python packages
     make rebuild-cast-proto
 

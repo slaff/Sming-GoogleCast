@@ -1,4 +1,4 @@
-COMPONENT_DEPENDS := google-cast
+COMPONENT_DEPENDS := GoogleCast
 
 ENABLE_SSL := Bearssl
 
