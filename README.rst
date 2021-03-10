@@ -1,5 +1,5 @@
-Google-Cast
-===========
+GoogleCast
+==========
 
 .. highlight:: bash
 
@@ -39,32 +39,26 @@ Using
       }
 
 Re-Generating C files from proto file
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 You can re-generate the C files from the proto file. This can be useful if you want to use a newer version of the Google Cast proto file.
 Make sure to compile it using `nanopb`. The re-generation can be done with the commands below::
 
-    cd $SMING_HOME/Libraries/GoogleCast/samples/basic
-    make python-requirements # should be executed once to download and install the required python packages
-    make rebuild-cast-proto
+   cd $SMING_HOME/Libraries/GoogleCast/samples/basic
+   make python-requirements # should be executed once to download and install the required python packages
+   make rebuild-cast-proto
 
 Protocol
 --------
 There are multiple documents in internet that describe the Google Cast protocol and its inner workings. As a start one can take a look at
 the presentation and documents below.
 
-# Presentation with insights
-https://docs.google.com/presentation/d/1X1BdFunVnLkF7L0BgevH2zzkcSe0_gtdTJ_pMdEuakQ/htmlpresent
+- `Presentation with insights <https://docs.google.com/presentation/d/1X1BdFunVnLkF7L0BgevH2zzkcSe0_gtdTJ_pMdEuakQ/htmlpresent>`_.
+- `Protocol description <https://github.com/thibauts/node-castv2#the-tls--protocol-buffers-layer>`_.
+- `Reference python implementation (for Home Assistant) <https://github.com/home-assistant-libs/pychromecast/tree/master/pychromecast>`_.
+- `Application in C++/Qt <https://github.com/jhenstridge/cast-app>`_.
 
-# Protocol description
-https://github.com/thibauts/node-castv2#the-tls--protocol-buffers-layer
-
-# Reference python implementation (for Home Assistant)
-https://github.com/home-assistant-libs/pychromecast/tree/master/pychromecast
-
-# Application in C++/Qt
-https://github.com/jhenstridge/cast-app
-
-# App-Ids
+App-Ids
+~~~~~~~
 List of current APP-IDS
 https://clients3.google.com/cast/chromecast/device/baseconfig
 
