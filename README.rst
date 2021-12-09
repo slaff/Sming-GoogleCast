@@ -65,4 +65,4 @@ https://clients3.google.com/cast/chromecast/device/baseconfig
 Individual app configurations are obtained from this url:
 https://clients3.google.com/cast/chromecast/device/app?a={appid}
 
-Where {appid} is the id of the app, and the output of this is JSON in the format of a receiver app defintion.
+Where {appid} is the id of the app, and the output of this is JSON in the format of a receiver app definition.

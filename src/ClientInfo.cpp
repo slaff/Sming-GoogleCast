@@ -31,7 +31,7 @@ void ClientInfo::stopDiscovery()
 
 bool ClientInfo::onMessage(mDNS::Message& message)
 {
-	// Check if we're interested in this reponse
+	// Check if we're interested in this response
 	if(!message.isReply()) {
 		return true;
 	}
