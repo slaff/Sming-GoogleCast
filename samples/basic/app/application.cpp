@@ -159,7 +159,7 @@ bool onMediaMessage(GoogleCast::Channel& channel, GoogleCast::Channel::Message& 
 bool onMessage(GoogleCast::Channel::Message& message)
 {
 	debug_i("%s", __PRETTY_FUNCTION__);
-	if((message.payloadType() == message.PayloadType::string)) {
+	if((message.payloadType() == GoogleCast::Channel::Message::PayloadType::string)) {
 		debug_i("nameSpace: %s, source: %s, destination: %s", String(message.nameSpace).c_str(),
 				String(message.source_id).c_str(), String(message.destination_id).c_str());
 

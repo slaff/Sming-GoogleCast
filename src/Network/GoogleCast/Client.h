@@ -75,6 +75,8 @@ public:
 	Media media;
 
 protected:
+	using TcpClient::connect;
+
 	err_t onConnected(err_t err) override;
 	void onError(err_t err) override;
 	void onClosed() override;
